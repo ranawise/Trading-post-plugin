@@ -1,0 +1,50 @@
+# Trading Post Configuration
+
+# Maximum number of trading slots per player
+max-trading-slots: 5
+
+# Trading fee settings
+trading-fee:
+  # Enable trading fees
+  enabled: false
+  # Fee type: 'MONEY' for economy (requires Vault), 'ITEM' for custom item
+  type: 'ITEM'
+  # Amount of money (if type is MONEY)
+  money-amount: 100.0
+  # Item material (if type is ITEM)
+  item-material: 'DIAMOND'
+  # Item amount (if type is ITEM)
+  item-amount: 1
+
+# Trading post settings
+trading-post:
+  # Maximum distance from trading post to interact (in blocks)
+  max-distance: 5.0
+  # Allow trading posts in specific worlds only (empty list = all worlds)
+  allowed-worlds: []
+  # Minimum distance between trading posts (in blocks)
+  min-distance-between-posts: 10.0
+
+# GUI settings
+gui:
+  browse-title: '&6Trading Posts'
+  items-title: '&6Available Items'
+  confirm-title: '&6Confirm Trade'
+
+# Messages
+messages:
+  prefix: '&8[&6TP&8] '
+  trading-post-created: '&aPost created'
+  trading-post-removed: '&aPost removed'
+  no-trading-posts: '&cNo posts found'
+  insufficient-fee: '&cNeed {amount}x {item}'
+  max-slots-reached: '&cMax slots reached ({max})'
+  trade-successful: '&aTrade complete'
+  trade-failed: '&cTrade failed'
+  no-permission: '&cNo permission'
+  invalid-location: '&cInvalid location'
+  too-close: '&cToo close ({distance}m min)'
+  inventory-full: '&cInventory full'
+  item-not-available: '&cItem unavailable'
+  config-reloaded: '&aConfig reloaded'
+  player-reset: '&aReset {count} posts for {player}'
