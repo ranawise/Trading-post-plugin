@@ -129,4 +129,4 @@ src/main/java/com/tradingpost/
 
 ---
 
-*by [dammnranaah](https://github.com/dammnranaah)*
+*by [ranawise](https://github.com/ranawise)*
