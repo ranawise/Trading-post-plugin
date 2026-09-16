@@ -1,0 +1,44 @@
+name: TradingPost
+version: '1.0.0'
+main: com.tradingpost.TradingPostPlugin
+api-version: '1.21'
+author: TradingPost Team
+description: A secure trading system for Minecraft servers
+softdepend: [Vault]
+
+commands:
+  tradingpost:
+    description: Main trading post command
+    usage: /tradingpost <create|add|browse|list|remove|reload|reset>
+    aliases: [trade]
+    permission: tradingpost.use
+
+permissions:
+  tradingpost.use:
+    description: Allows basic trading post usage
+    default: true
+  tradingpost.create:
+    description: Allows creating trading posts
+    default: true
+  tradingpost.browse:
+    description: Allows browsing trading posts
+    default: true
+  tradingpost.remove:
+    description: Allows removing own trading posts
+    default: true
+  tradingpost.reload:
+    description: Reload plugin configuration
+    default: op
+  tradingpost.reset:
+    description: Reset player trading posts
+    default: op
+  tradingpost.admin:
+    description: Full admin access to trading posts
+    default: op
+    children:
+      tradingpost.use: true
+      tradingpost.create: true
+      tradingpost.browse: true
+      tradingpost.remove: true
+      tradingpost.reload: true
+      tradingpost.reset: true
